@@ -1,7 +1,7 @@
 {
-  "name": "@bolobob/eslint-vitest-no-only",
-  "version": "0.0.1",
-  "main": ".eslintrc.js",
+  "name": "@bolobob/eslint-plugin-vitest-no-only",
+  "version": "0.0.3",
+  "main": "index.js",
   "author": "Shinichi Aoki <aokishinichi@gmail.com> [https://github.com/bolobob]",
   "devDependencies": {
     "eslint": "^8.45.0",
