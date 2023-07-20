@@ -1,0 +1,7 @@
+{
+  "devDependencies": {
+    "eslint": "^8.45.0",
+    "eslint-plugin-rulesdir": "^0.2.2",
+    "mocha": "^10.2.0"
+  }
+}
