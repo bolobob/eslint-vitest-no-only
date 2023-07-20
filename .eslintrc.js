@@ -9,4 +9,7 @@ module.exports = {
   },
   "plugins": ["rulesdir"],
   "extends": "eslint:recommended",
+  "rules": {
+    "rulesdir/no-only": 2,
+  }
 }
