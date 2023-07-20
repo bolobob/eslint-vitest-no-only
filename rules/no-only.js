@@ -1,13 +1,17 @@
 "use-strict";
 
-// contextを引数に取る関数を外に晒す
 module.exports = function(context) {
   return {
-    Identifier: function(node) {
-      if (node.name === "hoge") {
+    CallExpression: function(node) {
+      const name = node.callee.name;
+      if (name !== "describe" && name !== "test" && name === "it") {
+        return;
+      }
+
+      if (node.callee.property.name === "only") {
         context.report({
           node: node,
-          message: "hoge is not allowed"
+          message: `${name}.only is not allowed`
         });
       }
     }
